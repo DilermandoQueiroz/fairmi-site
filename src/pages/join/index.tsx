@@ -3,8 +3,7 @@ import Header from '@/components/Header';
 import Title from '@/components/Title';
 import SubTitle from '@/components/SubTitle';
 import Division from '@/components/Division';
-import FootNote from '@/components/FootNote';
-import Blog from '@/components/Blog';
+import People from '@/components/People';
 
 export default function JoinHome() {
   return (
@@ -15,11 +14,10 @@ export default function JoinHome() {
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <Header />
-        <SubTitle title="We are developing adjustable ML models for better performance and fairness"/>
-        <Title title="BLOG"/>
-        <Division />
-        <Blog />
-        <Blog />
+        <SubTitle title="Promoting fair and inclusive AI demands a diversity of people, skills, and experiences—join our team."/>
+        <Title title="OUR TEAM"/>
+        <Division title="People"/>
+        <People />
     </div>
   );
 }
