@@ -9,9 +9,9 @@ const Header = () => {
       </div>
       <div className="flex-grow flex items-center justify-start ml-4 md:ml-24 gap-4 md:gap-6">
         {/* Usar o componente Link para navegação */}
-        <Link href="/" passHref><div className="text-sm md:text-base font-normal cursor-pointer">home</div></Link>
-        <Link href="/blog" passHref><div className="text-sm md:text-base font-normal cursor-pointer">blog</div></Link>
-        <Link href="/join" passHref><div className="text-sm md:text-base font-normal cursor-pointer">join</div></Link>
+        <Link href="/" passHref><div className="text-sm md:text-base font-normal cursor-pointer hover:-translate-y-1 transition-transform">home</div></Link>
+        <Link href="/blog" passHref><div className="text-sm md:text-base font-normal cursor-pointer hover:-translate-y-1 transition-transform">blog</div></Link>
+        <Link href="/join" passHref><div className="text-sm md:text-base font-normal cursor-pointer hover:-translate-y-1 transition-transform">join</div></Link>
       </div>
     </div>
   );
