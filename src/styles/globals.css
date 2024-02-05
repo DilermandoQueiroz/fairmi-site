@@ -21,6 +21,12 @@ body {
   @apply text-blue-700;
 }
 
+@layer base {
+  html {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

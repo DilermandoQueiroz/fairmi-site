@@ -35,8 +35,8 @@ const BlogCard: React.FC<BlogCardProps> = ({ imageUrl, title, date }) => {
                 <img className="grow shrink basis-0 self-stretch" src={imageUrl} />
             </div>
             <div className="self-stretch p-7 flex-col justify-center items-center flex">
-                <div className="self-stretch text-xs font-semibold font-['Inter']">{title}</div>
-                <div className="self-stretch text-xs font-normal font-['Inter']">{date}</div>
+                <div className="self-stretch text-xs font-semibold ">{title}</div>
+                <div className="self-stretch text-xs font-normal ">{date}</div>
             </div>
         </div>
     );
