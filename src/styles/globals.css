@@ -17,10 +17,12 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
   @apply bg-white;
   @apply text-blue-700;
 }
+
+
 
 @layer utilities {
   .text-balance {
@@ -32,5 +34,5 @@ body {
   font-size: clamp(3rem, 6vw, 10rem); /* Ajustado para começar de 3rem e ir até 10rem */
   transform: rotate(-5deg);
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: 'Golos Text','Inter', sans-serif;
 }
