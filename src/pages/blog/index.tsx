@@ -2,9 +2,7 @@ import Head from 'next/head';
 import Header from '@/components/Header';
 import Title from '@/components/Title';
 import SubTitle from '@/components/SubTitle';
-import About from '@/components/About';
 import Division from '@/components/Division';
-import FootNote from '@/components/FootNote';
 import Blog from '@/components/Blog';
 
 export default function BlogHome() {
@@ -16,9 +14,9 @@ export default function BlogHome() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
         <Header />
-        <SubTitle title="We are developing adjustable ML models for better performance and fairness"/>
+        <SubTitle title="We are developing adjustable ML models for better performance and fairness."/>
         <Title title="BLOG"/>
-        <Division />
+        <Division title='Research'/>
         <Blog />
         <Blog />
       </div>
