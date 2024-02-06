@@ -4,6 +4,7 @@ import Title from '@/components/Title';
 import SubTitle from '@/components/SubTitle';
 import Division from '@/components/Division';
 import People from '@/components/People';
+import Partnership from '@/components/Partnership';
 
 export default function JoinHome() {
   return (
@@ -16,8 +17,10 @@ export default function JoinHome() {
         <Header />
         <SubTitle title="Promoting fair and inclusive AI demands a diversity of people, skills, and experiences—join our team."/>
         <Title title="OUR TEAM"/>
-        <Division title="People"/>
+        <Division title="Members"/>
         <People />
+        <Division title="Partnership"/>
+        <Partnership />
     </div>
   );
 }
