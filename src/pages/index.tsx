@@ -5,8 +5,22 @@ import SubTitle from '@/components/SubTitle';
 import About from '@/components/About';
 import Division from '@/components/Division';
 import Blog from '@/components/Blog';
+import { getAllPosts } from '@/lib/api';
+import { GetStaticProps } from 'next';
+import Link from 'next/link';
+import BlogCard from '@/components/BlogCard';
 
-export default function Home() {
+export const getStaticProps: GetStaticProps = async () => {
+  const posts = getAllPosts();
+
+  return {
+    props: {
+      posts,
+    },
+  };
+};
+
+export default function Home({ posts }: { posts: any[] }) {
   return (
     <div>
       <Head>
@@ -19,7 +33,17 @@ export default function Home() {
       <Title title="FAIRNESS"/>
       <About />
       <Division title='Research'/>
-      <Blog />
+      <Blog>
+        {posts.map((post, index) => (
+          <Link href={`/blog/${post.slug}`} passHref>
+            <BlogCard 
+              key={index}
+              title={post.title}
+              imageUrl={post.image}
+              date={post.date}/>
+          </Link>
+        ))}
+      </Blog>
     </div>
   );
 }
