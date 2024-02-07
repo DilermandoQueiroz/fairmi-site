@@ -4,11 +4,13 @@ import Image from 'next/image';
 interface PartnershipLogoProps {
     src: string;
     alt: string;
+    size?: string; // Optional size prop to control the size of the logo
 }
 
-const PartnershipLogo: React.FC<PartnershipLogoProps> = ({ src, alt }) => {
+const PartnershipLogo: React.FC<PartnershipLogoProps> = ({ src, alt, size = 'w-28 h-28' }) => {
+    // Use the size prop to dynamically set the width and height classes
     return (
-        <div className='w-28 h-28 relative'>
+        <div className={`${size} relative`}>
             <Image
                 priority
                 src={src}
@@ -20,31 +22,30 @@ const PartnershipLogo: React.FC<PartnershipLogoProps> = ({ src, alt }) => {
     );
 }
 
+
 const Partnership: React.FC = () => {
     return (
         <div className='w-full flex justify-around items-center flex-wrap'>
             <PartnershipLogo
-                src="usp.svg"
+                src="/icons/usp-logo-eps.svg"
                 alt="Universidade de São Paulo"
+                size="w-20 h-20" // Specify a larger size for the USP logo
             />
+            {/* Other logos remain unchanged */}
             <PartnershipLogo
-                src="/hc.png"
-                alt="Hospital das Clínicas"
-            />
-            <PartnershipLogo
-                src="/unifesp.svg"
+                src="/icons/download.svg"
                 alt="Universidade Federal de São Paulo"
             />
             <PartnershipLogo
-                src="/idiap.svg"
+                src="/icons/idiap.svg"
                 alt="IDIAP Research"
             />
             <PartnershipLogo
-                src="/fapesp.svg"
+                src="/icons/fapesp.svg"
                 alt="FAPESP"
             />
             <PartnershipLogo
-                src="/snf.svg"
+                src="/icons/snf.svg"
                 alt="Swiss National Science Foundation"
             />
         </div>
