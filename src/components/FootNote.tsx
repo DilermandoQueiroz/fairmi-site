@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import GitHub from "../../public/github.svg";
+import GitHub from "../../public/icons/github.svg";
 import React from 'react';
 
 const FootNote: React.FC = () => {
