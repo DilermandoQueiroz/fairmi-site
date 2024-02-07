@@ -1,10 +1,34 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Publishing in the blog
+
+Adding new blog posts to your Next.js site is straightforward. Follow the steps below to create and publish new content:
+
+### Step 1: Create a Post Folder
+
+Each blog post should have its own folder within the `public/posts` directory. The folder name will be used in the URL of the post. For example, to create a post accessible at `/blog/my-new-post`, create a folder named `my-new-post`:
+
+### Step 2: Add Your Markdown File
+
+Within the new folder, create a Markdown file named `index.md`. This file will contain the content of your blog post. Start with the following template:
+
+```markdown
+---
+title: "Your Post Title Here"
+slug: "Same as your folder"
+author: "Author's Name"
+date: "YYYY-MM-DD"
+image: "URL or Path to image that will be in blog page"
+---
+```
+
 ## Getting Started
 
 First, run the development server:
 
 ```bash
+npm install
+# and
 npm run dev
 # or
 yarn dev
