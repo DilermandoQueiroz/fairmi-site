@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Header from '../components/Header';
 import Title from '@/components/Title';
 import SubTitle from '@/components/SubTitle';
@@ -23,11 +22,6 @@ export const getStaticProps: GetStaticProps = async () => {
 export default function Home({ posts }: { posts: any[] }) {
   return (
     <div>
-      <Head>
-        <title>FairMI</title>
-        <meta name="description" content="Welcome to FairMI" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header />
       <SubTitle title="Impartiality in Machine Learning with Application in Medical Images."/>
       <Title title="FAIRNESS"/>
