@@ -1,6 +1,6 @@
 ---
 title: "First"
-slug: test
+slug: first
 author: Dilermando Queiroz Neto
 date: 21 January 2024
 image: https://i.pinimg.com/originals/58/09/00/5809009378b2c86c6aa7facf52e8a741.gif

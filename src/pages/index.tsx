@@ -24,7 +24,7 @@ export default function Home({ posts }: { posts: any[] }) {
   return (
     <div>
       <Head>
-        <title>Home Page</title>
+        <title>FairMI</title>
         <meta name="description" content="Welcome to FairMI" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
