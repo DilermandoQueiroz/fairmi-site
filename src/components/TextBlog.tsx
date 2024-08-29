@@ -6,8 +6,8 @@ interface TitleProps {
 
 const TextBlog: React.FC<TitleProps> = ({ text }) => {
     return (
-        <div className="w-full px-4 sm:pl-28 md:pl-60 md:pr-48 lg:pl-60 lg:pr-60 flex flex-col justify-center items-start pb-[200px]">
-            <div className="self-stretch text-base"
+        <div className="w-full flex flex-col justify-center items-start pb-[200px]">
+            <div className="self-stretch text-xl max-w-3xl mx-auto"
                 dangerouslySetInnerHTML={{ __html: text }} />
         </div>
     );
