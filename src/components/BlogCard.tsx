@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface BlogCardProps {
     imageUrl: string;
     title: string;
@@ -6,13 +8,13 @@ interface BlogCardProps {
 
 const BlogCard: React.FC<BlogCardProps> = ({ imageUrl, title, date }) => {
     return (
-        <div className="grow shrink basis-0 self-stretch border border-blue-700 flex-col justify-center items-center inline-flex">
-            <div className="self-stretch grow shrink basis-0 px-7 pt-7 justify-center items-center inline-flex">
-                <img className="grow shrink basis-0 self-stretch" src={imageUrl} />
+        <div className="w-full max-w-sm rounded-lg overflow-hidden shadow-lg flex flex-col">
+            <div className="w-full overflow-hidden">
+                <img className="w-full h-full object-cover" src={imageUrl} alt={title} />
             </div>
-            <div className="self-stretch p-7 flex-col justify-center items-center flex">
-                <div className="self-stretch text-xs font-semibold ">{title}</div>
-                <div className="self-stretch text-xs font-normal ">{date}</div>
+            <div className="p-4 flex flex-col justify-center items-start">
+                <div className="text-lg font-semibold mb-1">{title}</div>
+                <div className="text-sm font-normal">{date}</div>
             </div>
         </div>
     );
