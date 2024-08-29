@@ -54,6 +54,7 @@ export default function BlogPost({ post, content }: { post: any, content: string
                 title={post.title}
                 date={post.date}
                 author={post.author}
+                paperLink={post.paperLink}
             />
             <TextBlog text={content} />
         </div>
