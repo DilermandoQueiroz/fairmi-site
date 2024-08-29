@@ -16,7 +16,7 @@ export default function JoinHome() {
         </Head>
         <Header />
         <SubTitle title="Promoting fair and inclusive AI demands a diversity of people, skills, and experiences—join our team."/>
-        <Title title="OUR TEAM"/>
+        <Title title="Our Team"/>
         <Division title="Members"/>
         <People />
         <Division title="Partnership"/>

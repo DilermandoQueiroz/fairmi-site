@@ -22,14 +22,9 @@ export const getStaticProps: GetStaticProps = async () => {
 export default function BlogHome({ posts }: { posts: any[] }) { // Use TypeScript to define the props type
   return (
     <div>
-      <Head>
-        <title>Home Page</title>
-        <meta name="description" content="Welcome to FairMI" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header />
       <SubTitle title="We are developing adjustable ML models for better performance and fairness."/>
-      <Title title="BLOG"/>
+      <Title title="Blog"/>
       <Division title='Research'/>
       <Blog>
         {posts.map((post, index) => (
