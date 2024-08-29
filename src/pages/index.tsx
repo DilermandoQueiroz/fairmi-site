@@ -22,9 +22,8 @@ export const getStaticProps: GetStaticProps = async () => {
 export default function Home({ posts }: { posts: any[] }) {
   return (
     <div>
-      <Header />
       <SubTitle title="Impartiality in Machine Learning with Application in Medical Images."/>
-      <Title title="FAIRNESS"/>
+      <Title title="FairMI"/>
       <About />
       <Division title='Research'/>
       <Blog>
