@@ -53,8 +53,8 @@ interface PeopleProps {
 const PeopleCard: React.FC<PeopleProps> = ({ name, position }) => {
     return (
         <div className="self-stretch mb-4 grow shrink basis-0 flex-col justify-start items-start flex">
-            <div className="text-2xl font-normal font-['Inter']">{name}</div>
-            <div className="text-xs font-normal font-['Inter']">{position}</div>
+            <div className="text-2xl">{name}</div>
+            <div className="text-xs">{position}</div>
         </div>
     );
 }
