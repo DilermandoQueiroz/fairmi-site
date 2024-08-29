@@ -13,7 +13,7 @@ export default function Document() {
       <body>
         <Header/>
         <div className='flex flex-col gap-4'>
-          <div className='lg:px-24 md:px-12 px-6'>
+          <div className='max-w-screen-2xl mx-auto lg:px-24 md:px-12 px-6'>
             <div className='flex flex-col gap-4'>
             <Main />
             <NextScript />
