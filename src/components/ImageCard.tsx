@@ -9,12 +9,13 @@ interface ImageCardProps {
 const ImageCard: React.FC<ImageCardProps> = ({ imageUrl, altText = 'Image' }) => {
   return (
     <div className="w-full h-auto pb-[70px] flex justify-center items-center">
-      <div className="relative w-full h-[400px]">
+      <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]">
         <Image
           src={imageUrl}
           alt={altText}
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
+          objectPosition="center"
           className="rounded-[10px]"
         />
       </div>
