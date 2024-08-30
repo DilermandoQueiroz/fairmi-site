@@ -2,8 +2,8 @@ import React from 'react';
 
 const People: React.FC = () => {
     const people = [
-        { name: "Anderson Carlos", position: "BSc Student", institution: "Unifesp" },
-        { name: "André Anjos", position: "Coordinator", institution: "Unifesp" },
+        { name: "Anderson Carlos", position: "BSc Student", institution: "IFG" },
+        { name: "André Anjos", position: "Coordinator", institution: "Idiap" },
         { name: "Bruno Pires", position: "BSc Student", institution: "Unifesp" },
         { name: "Dilermando Queiroz Neto", position: "PhD Student", institution: "Idiap" },
         { name: "Gabriel Dias Dadalto", position: "Master Student", institution: "Unifesp" },
