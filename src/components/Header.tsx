@@ -7,17 +7,17 @@ const Header = () => {
       <div className="flex justify-center items-center gap-12">
         <Link href="/" passHref>
           <div className="text-xl cursor-pointer transform transition-transform duration-300 hover:-translate-y-1">
-            home
+            Home
           </div>
         </Link>
         <Link href="/blog" passHref>
           <div className="text-xl cursor-pointer transform transition-transform duration-300 hover:-translate-y-1">
-            blog
+            Blog
           </div>
         </Link>
         <Link href="/team" passHref>
           <div className="text-xl cursor-pointer transform transition-transform duration-300 hover:-translate-y-1">
-            our team
+            Team
           </div>
         </Link>
       </div>
