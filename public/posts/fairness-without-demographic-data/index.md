@@ -3,7 +3,7 @@ title: "Using Backbone Foundation Model for Evaluating Fairness in Chest Radiogr
 slug: fairness-without-demographic-data
 author: Dilermando Queiroz Neto, André Anjos and Lilian Berton
 date: 29 August 2024
-image: https://i.pinimg.com/564x/b3/0f/25/b30f2526d965fad90653911b9b265843.jpg
+image: https://i.pinimg.com/564x/31/59/ec/3159ecdef850f7b835efe7ecc9bb9ff4.jpg
 paperLink: https://arxiv.org/abs/2408.16130
 ---
 
