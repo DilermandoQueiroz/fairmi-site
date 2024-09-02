@@ -5,7 +5,7 @@ const People: React.FC = () => {
         { name: "Anderson Carlos", position: "BSc Student", institution: "IFG" },
         { name: "André Anjos", position: "Coordinator", institution: "Idiap" },
         { name: "Bruno Pires", position: "BSc Student", institution: "Unifesp" },
-        { name: "Dilermando Queiroz Neto", position: "PhD Student", institution: "Idiap" },
+        { name: "Dilermando Queiroz Neto", position: "PhD Student", institution: "Unifesp" },
         { name: "Gabriel Dias Dadalto", position: "Master Student", institution: "Unifesp" },
         { name: "Giuliana Prado Peixoto", position: "BSc Student", institution: "Unifesp" },
         { name: "Gökhan Özbulak", position: "PhD Student", institution: "Idiap" },
