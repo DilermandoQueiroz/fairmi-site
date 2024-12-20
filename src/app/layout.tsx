@@ -18,16 +18,16 @@ export default function Layout({ children }: { children: ReactNode }) {
         <title>🏥 FairMI</title>
         <meta name="description" content="Welcome to FairMI" />
       </head>
-      <body className={isBlogSlugPage ? "text-black" : ""}>
-        <div className="flex flex-col gap-4">
-          <div className="max-w-screen-2xl mx-auto lg:px-24 md:px-12 px-6">
-            <div className="flex flex-col gap-4">
-              <Header />
-              {children}
-            </div>
-          </div>
+      <body className={`${isBlogSlugPage ? "text-black" : ""} min-h-screen flex flex-col`}>
+        <header>
+          <Header />
+        </header>
+        <main className="flex-grow max-w-screen-2xl mx-auto lg:px-24 md:px-12 px-6">
+          {children}
+        </main>
+        <footer>
           <FootNote />
-        </div>
+        </footer>
         <Analytics />
         <SpeedInsights />
       </body>
