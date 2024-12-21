@@ -20,6 +20,11 @@ const Header = () => {
             Team
           </div>
         </Link>
+        <Link href="/login" passHref>
+          <div className="text-xl cursor-pointer transform transition-transform duration-300 hover:-translate-y-1">
+            Login
+          </div>
+        </Link>
       </div>
     </div>
   );
