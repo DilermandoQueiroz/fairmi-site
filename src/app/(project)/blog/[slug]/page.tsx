@@ -41,7 +41,6 @@ export default async function BlogPostPage(props: BlogPostPageProps) {
   // Renderizar
   return (
     <div className="text-black">
-      <Header />
       <SubTitle title="We are developing adjustable ML models for better performance and fairness" />
       <TitleBlog
         title={post.title}
