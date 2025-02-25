@@ -3,7 +3,7 @@ title: "Does Data-Efficient Generalization Exacerbate Bias in Foundation Models?
 slug: data-efficient
 author: Dilermando Queiroz, Anderson Carlos, Maíra Fatoretto, Luis Filipe Nakayama, André Anjos and Lilian Berton
 date: 29 August 2024
-image: https://i.pinimg.com/564x/7b/82/f5/7b82f5ff709f0ddc2ff89f3462e3117a.jpg
+image: https://i.pinimg.com/736x/a4/d7/32/a4d732e5cc1e4a80b4bc21efb7a65859.jpg
 paperLink: http://arxiv.org/abs/2408.16154
 ---
 

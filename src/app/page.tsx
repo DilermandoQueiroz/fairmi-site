@@ -11,6 +11,12 @@ import Link from "next/link";
 export default async function Page() {
   const posts = await getAllPosts();
 
+  const sortedPosts = [...posts].sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    return dateB.getTime() - dateA.getTime();
+  });
+
   return (
     <div>
       <SubTitle title="Impartiality in Machine Learning with Application in Medical Images." />
@@ -18,9 +24,13 @@ export default async function Page() {
       <About />
       <Division title="Research" />
       <Blog>
-        {posts.map((post, index) => (
+        {sortedPosts.map((post, index) => (
           <Link href={`/blog/${post.slug}`} passHref key={index}>
-            <BlogCard title={post.title} imageUrl={post.image} date={post.date} />
+            <BlogCard
+              title={post.title}
+              imageUrl={post.image}
+              date={post.date}
+            />
           </Link>
         ))}
       </Blog>

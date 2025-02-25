@@ -8,7 +8,13 @@ import BlogCard from "@/components/BlogCard";
 import Link from "next/link";
 
 export default async function BlogHome() {
-  const posts = await getAllPosts(); // Obtendo os posts diretamente no componente
+  const posts = await getAllPosts();
+  
+  const sortedPosts = [...posts].sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    return dateB.getTime() - dateA.getTime();
+  });
 
   return (
     <div>
@@ -16,7 +22,7 @@ export default async function BlogHome() {
       <Title title="Blog" />
       <Division title="Research" />
       <Blog>
-        {posts.map((post, index) => (
+        {sortedPosts.map((post, index) => (
           <Link href={`/blog/${post.slug}`} passHref key={index}>
             <BlogCard
               title={post.title}
